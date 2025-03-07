@@ -1,10 +1,72 @@
-# libCLImate
+# libCLImate <!-- omit in toc -->
+
+## Table of Contents <!-- omit in toc -->
+
+
+## Introduction
+
 
 **libCLImate** is a portable, lightweight mini-framework that encapsulates the common aspects of **C**ommand-**L**ine **I**nterface boilerplate, including:
 
 - command-line argument parsing and sorting (using the **[CLASP](https://github.com/synesissoftware/CLASP)** library);
 - diagnostic logging library (**[Pantheios](https://github.com/synesissoftware/Pantheios)**) initialisation / lifetime scoping;
 - provision of de-facto standard CLI facilities, such as responding to '--help' and '--version';
+
+## Installation
+
+T.B.C.
+
+
+## Components
+
+### C API
+
+T.B.C.
+
+
+## Components
+
+### C++ API
+
+T.B.C.
+
+
+## Examples
+
+Examples are provided in the ```examples``` directory, along with a markdown description for each.
+
+
+## Project Information
+
+### Where to get help
+
+[GitHub Page](https://github.com/synesissoftware/libCLImate "GitHub Page")
+
+
+### Contribution guidelines
+
+Defect reports, feature requests, and pull requests are welcome on https://github.com/synesissoftware/libCLImate.
+
+
+### Dependencies
+
+T.B.C.
+
+
+### Related projects
+
+T.B.C.
+
+
+### License
+
+**libCLImate** is released under the 3-clause BSD license. See [LICENSE](./LICENSE) for details.
+
+
+<!-- ########################### end of file ########################### -->
+
+
+
 
 **libCLImate** depends on the following libraries:
 

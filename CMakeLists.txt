@@ -5,7 +5,7 @@
 # Purpose:  Top-level CMake lists file for libCLImate
 #
 # Created:  23rd October 2024
-# Updated:  1st February 2025
+# Updated:  8th March 2025
 #
 # ######################################################################## #
 
@@ -71,6 +71,18 @@ if(MSVC)
 		set(CMAKE_C_STANDARD 90)
 		set(CMAKE_CXX_STANDARD 98)
 	endif()
+
+	if(MSVC_USE_MT)
+
+		set(CMAKE_MSVC_RUNTIME_LIBRARY "MultiThreaded$<$<CONFIG:Debug>:Debug>")
+	endif(MSVC_USE_MT)
+else(MSVC)
+
+	if(MSVC_USE_MT)
+
+		# this here just to absorb warning about not using `MSVC_USE_MT` (to
+		# enable **prepare_cmake.sh** to be simple)
+	endif(MSVC_USE_MT)
 endif(MSVC)
 
 
@@ -215,7 +227,7 @@ endif()
 
 if(BUILD_TESTING)
 
-	set(xTests_REQUIRED_VERSION_ 0.25)
+	set(xTests_REQUIRED_VERSION_ 0.26)
 
 	find_package(xTests ${xTests_REQUIRED_VERSION_} REQUIRED)
 
@@ -238,7 +250,7 @@ include(GNUInstallDirs)
 # targets
 
 # ################################################
-# main library
+# main libraries
 
 add_subdirectory(src)
 
