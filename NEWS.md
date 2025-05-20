@@ -4,6 +4,7 @@
 
 | Date                  | News Item                                                 |
 | --------------------- | --------------------------------------------------------- |
+| 20th May 2025         |   libCLImate 0.4.0 (beta 1) released                      |
 | 8th May 2025          |   libCLImate 0.4.0 (alpha 1) released                     |
 | 28th January 2017     |   libCLImate 0.3.7 released                               |
 | 24th June 2017        |   libCLImate 0.3.6 released                               |
