@@ -4,9 +4,8 @@
 20th May 2025 - 0.4.0 (beta 1)
 ------------------------------
 
- * T.B.C;
- * T.B.C;
- * T.B.C;
+ * Added contingent report operations, which cause either normative or contingent early program exit;
+ * Updated usage functionality in terms of CLASP facilities more directly;
 
 
 8th May 2025 - 0.4.0 (alpha 1)
